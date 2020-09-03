@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;  
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;    
+}
+
+.container-fluid{
+	padding: 0;
+	overflow: hidden;
+}
+
+.right_col img{
+	width: 100%;
+}
+
+h1{
+	color: #003333;
+}
+
+p{
+	color: #868585;
+}
+
+button{
+	background: linear-gradient(90deg,#9999ff, #6666cc);	
+	font-size: 14px !important;
+}
+
+.carousel-control-prev-icon , .carousel-control-next-icon {
+    background-color: #6a6ad0;
+    border-radius: 10px;
+    height: 50px;
+    width: 22px;
+}
+
+header i.fa.fa-angle-up{
+	position: fixed;
+	bottom: 7%;
+	right: 5%;
+    background: #6666cc;
+    border-radius: 50%;
+    height: 40px;
+    width: 42px;
+    color: #fff;
+    text-align: center;
+    padding-top: .5%;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/*------s-1-------------------------*/
+#carouselExampleControls button.bg-white{
+	background: white;
+}
+
+button.navbar-toggler{
+	position: relative;
+	z-index: 100;
+}
+
+header{
+	background: url('img/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+form button{
+	box-shadow: 0px 13px 51px 0px #6666cc57;
+	background-image: linear-gradient(90deg,#9999ff, #6666cc);	
+	font-size: 14px !important;
+}
+
+#carouselExampleControls{
+	margin-top: 5%;
+}
+.section_1 p , .section_1 h1{
+	color: white;
+}
+
+/*----------s-2---------------*/
+.navbar-toggler{
+	background-color: #8085ee;
+}
+
+
+/*----------s-3------------------*/
+.link{
+	color: #3333cc;
+}
+.section_3 h1,h5{
+ 	color: #003333;
+}
+
+/*---------s-4----------------*/
+.section_4{	
+    /*background: url("img/Group 2.png") no-repeat ;
+    background-position: center top;  
+	background-size: 25%;    if give a backgroung image then write
+	position: relative;        
+    z-index: 99 !important;*/
+    position: absolute;
+   	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+    width: 300px;
+    height: 300px;
+    animation:spin 5s linear infinite;
+}
+
+
+/*---------s-5-------------*/
+.sec_5_img{
+	background: url('img/section 5 left.png') no-repeat;
+	background-position: 20% bottom;
+	background-size: 40%;
+	position: relative;
+	z-index: 5;
+}
+
+/*----------s-6------------------*/
+.gallery .row img{
+	width: 100%;
+	transition: all 1.5s ease;
+	box-shadow: 0px 3px 8px #6666cc8c;
+}
+
+.gallery .zoom{
+	overflow: hidden;
+}
+
+.gallery .zoom:hover img{
+	transform: scale(1.5);
+}
+
+.sect_6_left{
+	position: absolute;
+	left: 0px;
+	top: 0;
+	z-index: -100;
+    width: 250px;
+    height: 250px;
+    animation:spin 5s linear infinite;
+}
+
+.sect_6_right{
+	background: url('img/section 5 left.png') no-repeat;
+	background-position: right bottom;
+	background-size: 30%;
+	position: relative;
+}
+
+/*--------------s-7--------------------------------------------*/
+
+.owl-carousel .card img{
+	width: 48%;
+	margin: auto;
+}
+.card{
+	box-shadow: 1px 1px 20px #6666cc2e;
+}
+.rounded-lg {
+    border-radius: 2.3rem!important;
+}
+.owl-item{
+	margin-left: 10px;
+}
+.owl-carousel.owl-drag .owl-item{
+	max-height: 280px;
+}
+
+/*---------for owl-carousel using card-----*/
+.owl-carousel.owl-drag .owl-item {
+	opacity: 0.3;
+	transition: all .5s ease;
+}
+.owl-carousel.owl-drag .owl-item.center,.owl-item.center .card h4,.owl-item.center .card h2 {
+	opacity: 1;
+	transform: translateY(-10px);
+	color: #6666cc;
+}
+/*-----------owl-carousel using card end----------*/
+
+
+
+
+/*---------------s-8------------------------------------------------------------*/
+
+.section_8 .sect_6_left{
+	background-size: 30%;
+	background-position: center center;	
+}
+.section_8_round_img{
+	width: 300px;
+    height: 300px;
+}
+
+/*-------rotate image animetion- code- start-----*/
+.image_2 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0;
+    top: 43%;
+    transform: translateX(150px);
+    text-align: center;
+    width: 13%;
+    animation:orbit2 7s linear infinite;
+}
+
+@keyframes orbit2 {
+	from { 	transform: rotate(0deg) translateX(150px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+.image_1 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0;
+    top: 43%;
+    transform: translateX(120px);
+    text-align: center;
+    width: 9%;
+    animation:orbit1 7s linear infinite;
+}
+@keyframes orbit1 {
+	from { 	transform: rotate(0deg) translateY(90px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateY(90px) rotate(-360deg); }
+}
+
+.image {
+    position: absolute;
+   	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+    width: 300px;
+    height: 300px;
+    animation:spin 7s linear infinite;
+}
+
+@keyframes spin { 
+	100% {
+		transform:rotate(360deg);
+	 }
+}
+
+/*----rotate image animetion- code-end----*/
+
+
+/*----------------------------footer start----------------------------------------*/
+footer{
+	background-color: 	#9999ff2b;
+}
+
+/*----------------------------footer end----------------------------------------*/
+
+
+
+/*----------------------------------------*/
+@media (min-width: 1200px){
+	.container {
+	    width: 1000px;
+	    max-width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 998px){
+
+	.carousel-control-next, .carousel-control-prev {
+	   width: 5%;
+	}
+	.section_2 img{
+		width: 90%;
+	}
+	.container_sect_7{
+		max-width: 320px;
+		margin: auto;
+	}
+	.section_8_round_img {
+	    margin: auto;
+	}
+}
+
+@media (max-width: 557px){
+	#navbarSupportedContent ul , form {
+		text-align: center;
+		justify-content: center;
+	}
+	.carousel-item{
+		text-align: center;
+	}
+	.carousel-control-next, .carousel-control-prev {
+	   width: 8%;
+	}
+	.owl-carousel .owl-stage-outer{
+		padding-top: 30px;
+	}
+	.owl-carousel.owl-drag .owl-item{
+		max-height: 230px;
+	}
+	.section_8_round_img{
+		width: 350px;
+	    height: 350px;
+	}
+	.section_2{
+		margin-top: 10rem; 
+	}
+	/*----footer---*/
+	.nav-link {
+	    display: block;
+	    padding: 0.5rem 1rem;
+	}
+	.nav{
+		justify-content: center;
+	}
+	footer a img{
+		display: none;
+	}
+}
+
+
+
